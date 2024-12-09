@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body class="h-screen bg-gray-500">
+    <h1 class="text-2xl text-center mt-2">Lets Do video call </h1>
+    <!-- local user video stream  -->
+
+    <div class="p-2  sm:w-full sm:flex-row flex-col flex gap-2 flex-wrap">
+      <video src="" class="rounded-lg shadow-sm ring-2 ring-blue" id="user-1" autoplay playsinline></video>
+      <!-- remote user video stream -->
+      <video src="" id="user-2" class="rounded-lg shadow-sm ring-2 ring-blue" autoplay playsinline></video>
+    </div>
+
+    <!-- <div class="btn-box">
+      <button class="btn-2" onclick="closeConnection()">Cancel Call</button>
+      <button class="btn-1" onclick="joinMeeting()">Join Call</button>
+    </div> -->
+  </body>
+  <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+  <script src="main.js"></script>
+</html>
